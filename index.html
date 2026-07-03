@@ -97,14 +97,25 @@
             <div class="absolute left-1/3 bottom-0 -mb-10 w-36 h-36 bg-navy-500 rounded-full opacity-15 filter blur-lg"></div>
 
             <div class="relative z-10 flex flex-col md:flex-row items-center gap-6">
-                <!-- Avatar / Iniciales del Abogado -->
-                <div class="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-gold-300 to-gold-600 text-navy-950 font-serif font-bold text-3xl md:text-4xl rounded-2xl flex items-center justify-center shadow-lg border-2 border-white/20">
-                    AL
+                <!-- Logotipo Oficial del Despacho -->
+                <div class="w-20 h-20 md:w-24 md:h-24 bg-black text-navy-950 rounded-2xl flex items-center justify-center shadow-lg border-2 border-gold-400/40 overflow-hidden shrink-0">
+                    <img 
+                        src="Imagen de WhatsApp 2024-09-04 a las 09.27.43_748c05c8.png" 
+                        alt="Logotipo L&M Asociados" 
+                        class="w-full h-full object-contain p-1"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150x150/0b1d33/ffffff?text=L%26M';"
+                    />
                 </div>
                 
                 <div class="flex-1">
-                    <div class="inline-block bg-gold-500/20 text-gold-300 text-xs font-semibold px-2.5 py-1 rounded-full mb-2 uppercase tracking-wide border border-gold-500/30">
-                        Titular de Cuenta Autorizado
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
+                        <span class="inline-block bg-gold-500/20 text-gold-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide border border-gold-500/30">
+                            Titular de Cuenta Autorizado
+                        </span>
+                        <!-- Distintivo de Servicio Bilingüe -->
+                        <span class="inline-flex items-center gap-1.5 bg-navy-950 text-gold-400 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider border border-gold-600/50">
+                            <i class="fas fa-comments text-[10px]"></i> English Spoken
+                        </span>
                     </div>
                     <h2 class="font-serif text-2xl md:text-3.5xl font-bold text-white mb-1">Lic. Arturo Lepe Méndez</h2>
                     <p class="text-navy-200 text-sm md:text-base max-w-xl leading-relaxed">
@@ -186,7 +197,7 @@
                         </div>
 
                         <!-- NÚMERO DE TARJETA -->
-                        <div>
+                        <div class="mb-6">
                             <div class="flex justify-between items-center mb-1.5">
                                 <label class="text-xs text-navy-300 uppercase tracking-wider font-semibold">Número de Tarjeta</label>
                                 <span class="text-[10px] bg-navy-800 text-navy-300 px-2 py-0.5 rounded font-mono">Para OXXO / Cajero</span>
@@ -194,6 +205,34 @@
                             <div class="flex items-center gap-2 bg-navy-950 p-2.5 rounded-xl border border-navy-800">
                                 <span id="card-number" class="font-mono text-sm md:text-base tracking-wider font-semibold text-white select-all">5579100436969149</span>
                                 <button onclick="copyData('5579100436969149', 'btn-card')" id="btn-card" class="ml-auto bg-gold-500 hover:bg-gold-600 active:scale-95 text-navy-950 font-bold px-4 py-2 rounded-lg text-xs transition-all duration-200 flex items-center gap-1" title="Copiar Tarjeta">
+                                    <i class="fas fa-clone"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- NÚMERO DE CUENTA -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-1.5">
+                                <label class="text-xs text-navy-300 uppercase tracking-wider font-semibold">Número de Cuenta / Account Number</label>
+                                <span class="text-[10px] bg-navy-800 text-navy-300 px-2 py-0.5 rounded font-mono">Depósito Directo</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-navy-950 p-2.5 rounded-xl border border-navy-800">
+                                <span id="account-number" class="font-mono text-sm md:text-base tracking-wider font-semibold text-white select-all">56676251340</span>
+                                <button onclick="copyData('56676251340', 'btn-account')" id="btn-account" class="ml-auto bg-gold-500 hover:bg-gold-600 active:scale-95 text-navy-950 font-bold px-4 py-2 rounded-lg text-xs transition-all duration-200 flex items-center gap-1" title="Copiar Cuenta">
+                                    <i class="fas fa-clone"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CÓDIGO SWIFT -->
+                        <div>
+                            <div class="flex justify-between items-center mb-1.5">
+                                <label class="text-xs text-navy-300 uppercase tracking-wider font-semibold">Código SWIFT / BIC</label>
+                                <span class="text-[10px] bg-navy-800 text-navy-300 px-2 py-0.5 rounded font-mono">Transferencia Internacional</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-navy-950 p-2.5 rounded-xl border border-navy-800">
+                                <span id="swift-code" class="font-mono text-sm md:text-base tracking-wider font-semibold text-white select-all">BMSXMXMMXXX</span>
+                                <button onclick="copyData('BMSXMXMMXXX', 'btn-swift')" id="btn-swift" class="ml-auto bg-gold-500 hover:bg-gold-600 active:scale-95 text-navy-950 font-bold px-4 py-2 rounded-lg text-xs transition-all duration-200 flex items-center gap-1" title="Copiar SWIFT">
                                     <i class="fas fa-clone"></i> Copiar
                                 </button>
                             </div>
